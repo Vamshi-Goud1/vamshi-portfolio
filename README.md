@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# Vamshi Chinthakatla - Portfolio
 
-## Project info
+Welcome to my personal portfolio website! This project showcases my skills, experience, and projects as a Software Engineer & Backend Developer.
 
-**URL**: https://lovable.dev/projects/0409242c-a830-4830-819c-cd7256018335
+## 🚀 Technologies Used
 
-## How can I edit this code?
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **UI Components**: shadcn-ui, Radix UI
+- **Build Tool**: Vite
+- **Deployment**: Render
+- **Contact Form**: EmailJS integration
 
-There are several ways of editing your application.
+## 📁 Project Structure
 
-**Use Lovable**
+```
+src/
+├── components/          # React components
+│   ├── ui/             # shadcn-ui components
+│   ├── About.tsx       # About section
+│   ├── Contact.tsx     # Contact form with EmailJS
+│   ├── Hero.tsx        # Hero section
+│   └── ...             # Other sections
+├── config/             # Configuration files
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── pages/              # Page components
+```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0409242c-a830-4830-819c-cd7256018335) and start prompting.
+## 🛠️ Development
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-**Use your preferred IDE**
+### Setup
+```bash
+# Clone the repository
+git clone https://github.com/Vamshi-Goud1/vamshi-portfolio.git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Navigate to the project directory
+cd vamshi-portfolio
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
+```bash
+# Build the project
+npm run build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Preview the production build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 📧 Contact Form
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The contact form uses EmailJS for handling submissions:
+- Service ID: `service_sjao55j`
+- Template ID: `template_cxx1i59`
+- Public Key: `bj4GMvxttS64lbBiX`
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with:
+This project is deployed on Render. Any changes pushed to the main branch will automatically trigger a new deployment.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📞 Contact
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0409242c-a830-4830-819c-cd7256018335) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Email**: goudvamshi798@gmail.com
+- **LinkedIn**: [chintakatla-vamshi](https://linkedin.com/in/chintakatla-vamshi)
+- **GitHub**: [Vamshi-Goud1](https://github.com/Vamshi-Goud1)
