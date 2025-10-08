@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vamshi-portfolio
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    staticPublish: true
+    envVars:
+      - key: NODE_ENV
+        value: production
