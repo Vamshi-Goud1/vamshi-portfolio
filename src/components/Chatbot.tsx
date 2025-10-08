@@ -4,6 +4,10 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { getGeminiApiKey } from '@/config/gemini';
 import emailjs from '@emailjs/browser';
+// Add asset imports
+import vamshiBotImage from '@/assets/vamshi-bot.png';
+import profilePhoto from '@/assets/profile-photo.png';
+import userImage from '@/assets/user.png';
 
 interface Message {
   id: string;
@@ -209,7 +213,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
           backdropFilter: 'blur(10px)'
         }} className="bot-container">
           <img 
-            src="/src/assets/vamshi-bot.png" 
+            src={vamshiBotImage} 
             alt="Vamshi Bot" 
             style={{ 
               width: '90%', 
@@ -840,7 +844,7 @@ INSTRUCTION: You are Vamshi. Answer in first-person as Vamshi (use "I", "my"). D
         <div className="flex items-center gap-3">
           <div className="relative">
             <img 
-              src="/src/assets/profile-photo.png" 
+              src={profilePhoto} 
               alt="Vamshi" 
               className="w-10 h-10 rounded-lg border border-white/20" 
               style={{
@@ -878,7 +882,7 @@ INSTRUCTION: You are Vamshi. Answer in first-person as Vamshi (use "I", "my"). D
           >
               {!message.isUser && (
                 <div className="flex-shrink-0" style={{ display: 'flex', alignItems: 'center' }}>
-                  <img src="/src/assets/vamshi-bot.png" alt="V" style={{ width: 40, height: 40, borderRadius: 20 }} />
+                  <img src={vamshiBotImage} alt="V" style={{ width: 40, height: 40, borderRadius: 20 }} />
                 </div>
               )}
 
@@ -900,7 +904,7 @@ INSTRUCTION: You are Vamshi. Answer in first-person as Vamshi (use "I", "my"). D
 
               {message.isUser && (
                 <div className="flex-shrink-0" style={{ display: 'flex', alignItems: 'center' }}>
-                  <img src="/src/assets/user.png" alt="User" style={{ width: 40, height: 40, borderRadius: 20 }} />
+                  <img src={userImage} alt="User" style={{ width: 40, height: 40, borderRadius: 20 }} />
                 </div>
               )}
           </div>
@@ -908,7 +912,7 @@ INSTRUCTION: You are Vamshi. Answer in first-person as Vamshi (use "I", "my"). D
           {isLoading && !streamingMessageId && (
             <div className="flex items-start gap-3 animate-in slide-in-from-bottom-2 duration-300">
               <div className="flex-shrink-0" style={{ display: 'flex', alignItems: 'center' }}>
-                <img src="/src/assets/vamshi-bot.png" alt="V" style={{ width: 40, height: 40, borderRadius: 20 }} />
+                <img src={vamshiBotImage} alt="V" style={{ width: 40, height: 40, borderRadius: 20 }} />
               </div>
               <div style={{
                 maxWidth: '85%',
