@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { getGeminiApiKey } from '@/config/gemini';
 import emailjs from '@emailjs/browser';
-// Add asset imports
-import vamshiBotImage from '@/assets/vamshi-bot.png';
-import profilePhoto from '@/assets/profile-photo.png';
-import userImage from '@/assets/user.png';
+// Add asset imports with relative paths
+import vamshiBotImage from '../assets/vamshi-bot.png';
+import profilePhoto from '../assets/profile-photo.png';
+import userImage from '../assets/user.png';
 
 interface Message {
   id: string;
